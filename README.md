@@ -1,5 +1,5 @@
 # CNL-Final
- Computer Networks ( SPPU ) Programs
+Computer Networks ( SPPU ) Programs
 
 Third Year - Computer Engineering.
 
