@@ -6,7 +6,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
     name: A job to say hello
+ #   steps:
+  #  - name: GitHub Contribution Report Generator
+#      uses: ros-tooling/github-contribution-report-generator@0.0.7
     steps:
-    - name: GitHub Contribution Report Generator
-      uses: ros-tooling/github-contribution-report-generator@0.0.7
-    
+    - uses: ros-security/github-contribution-report-generator@master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        since-n-days-ago: 7
+        authors-filter: |
+          thomas-moulard
+        organizations-filter: |
+          ros-security    
