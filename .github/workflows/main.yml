@@ -10,13 +10,4 @@ jobs:
   #  - name: GitHub Contribution Report Generator
 #      uses: ros-tooling/github-contribution-report-generator@0.0.7
     steps:
-    - uses: ros-tooling/github-contribution-report-generator@0.0.7
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        since-n-days-ago: 7
-        authors-filter: |
-          thomas-moulard
-        organizations-filter: |
-          ros-security    
-        file-name: |
-            rreport.md
+        - run: lsb_release -a
