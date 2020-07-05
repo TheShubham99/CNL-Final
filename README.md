@@ -1,4 +1,4 @@
-# Computer Networks
+Computer Networks
 ---------------------
 Computer Networks ( SPPU ) Programs
 
